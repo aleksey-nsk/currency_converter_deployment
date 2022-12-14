@@ -6,7 +6,7 @@
 - [Frontend](https://github.com/aleksey-nsk/currency_converter_frontend)
 - Deployment (данный репозиторий)
 
-# Deployment: запустить приложение в контейнерах
+## Deployment: запустить приложение в контейнерах
 
 1. Развернём приложение в проде. Будем использовать **Docker-контейнеры**. Поднимем 3 контейнера:
 
