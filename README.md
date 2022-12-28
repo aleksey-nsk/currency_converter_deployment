@@ -1,36 +1,38 @@
 ## Info
 
-Тестовое задание **Конвертер валют**. Подробное условие в файле files/**task.pdf**.  
-Проект состоит из репозиториев:
+Task **Currency converter**. Detailed task requirements see in files/**task.pdf**.  
+Project consists of repositories:  
 - [Backend](https://github.com/aleksey-nsk/currency_converter_backend) 
 - [Frontend](https://github.com/aleksey-nsk/currency_converter_frontend)
-- Deployment (данный репозиторий)
+- Deployment (current repository)
 
-## Deployment: запустить приложение в контейнерах
+## Deployment: run application in containers
 
-1. Развернём приложение в проде. Будем использовать **Docker-контейнеры**.   
-   Поднимем 3 контейнера:
+1. Let's deploy the application in production. We will use **Docker containers**.  
+   We need to run 3 containers:
 
-       - База данных PostgreSQL
-       - Бэкенд (Spring Boot REST API на встроенном Tomcat-сервере)       
-       - AngularJS-фронтенд на сервере NGINX
+       - PostgreSQL database  
+       - Backend (Spring Boot REST API on embedded Tomcat-server)         
+       - AngularJS-frontend on NGINX server  
 
-2. Образы для бэкенда и фронтенда уже созданы и загружены на **Docker Hub**:  
+2. Backend and frontend images were previously created and uploaded to **Docker Hub**:    
    ![](https://github.com/aleksey-nsk/currency_converter_deployment/blob/master/screenshots/01_1_docker_hub.png)  
    
-3. Файл для запуска docker/**docker-compose.yaml** выглядит так:  
+3. Running file docker/**docker-compose.yaml** looks like this:    
    ![](https://github.com/aleksey-nsk/currency_converter_deployment/blob/master/screenshots/02_1_file_for_run.png)  
    ![](https://github.com/aleksey-nsk/currency_converter_deployment/blob/master/screenshots/02_2_file_for_run.png)  
 
-4. Возьмите машину, на которой установлены **Docker** и утилита **docker-compose**. Скопируйте на эту машину
-   файл docker/**docker-compose.yaml**. Далее откройте в терминале папку с этим файлом и выполните
-   команду `docker-compose up --build`. После этого скачаются нужные образы, и затем
-   приложение будет запущено в контейнерах. Для просмотра информации использовать команды:    
+4. Take a machine with installed **Docker** and **docker-compose**. Copy to this machine
+   file docker/**docker-compose.yaml**. Next, open the folder with this file in the terminal, and run
+   the command `docker-compose up --build`. 
+   
+   After that, the necessary images will be downloaded, and then
+   the application will be run in containers. To view information, use the commands:  
    `docker image ls`  
    `docker container ls -a`  
    `docker volume ls`  
    `docker network ls`  
    
-5. Приложение доступно в браузере по адресу: http://localhost:8099/
+5. The application is available in the browser at: http://localhost:8099/
 
-6. Документация к API доступна по адресу: http://localhost:8082/swagger-ui/index.html
+6. API documentation is available at: http://localhost:8082/swagger-ui/index.html
