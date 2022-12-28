@@ -18,7 +18,7 @@ Project consists of repositories:
 2. Backend and frontend images were previously created and uploaded to **Docker Hub**:    
    ![](https://github.com/aleksey-nsk/currency_converter_deployment/blob/master/screenshots/01_1_docker_hub.png)  
    
-3. Running file docker/**docker-compose.yaml** looks like this:    
+3. Launch file docker/**docker-compose.yaml** looks like this:    
    ![](https://github.com/aleksey-nsk/currency_converter_deployment/blob/master/screenshots/02_1_file_for_run.png)  
    ![](https://github.com/aleksey-nsk/currency_converter_deployment/blob/master/screenshots/02_2_file_for_run.png)  
 
