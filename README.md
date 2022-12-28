@@ -23,8 +23,9 @@ Project consists of repositories:
    ![](https://github.com/aleksey-nsk/currency_converter_deployment/blob/master/screenshots/02_2_file_for_run.png)  
 
 4. Take a machine with installed **Docker** and **docker-compose**. Copy to this machine file   
-   docker/**docker-compose.yaml**. Next, open the folder with this file in the terminal, and run
-   the command `docker-compose up --build`. 
+   docker/**docker-compose.yaml**. Next, open the folder with this file in the terminal,  
+   and run the command:  
+   `docker-compose up --build`. 
    
    After that, the necessary images will be downloaded, and then
    the application will be run in containers. To view information, use the commands:  
