@@ -28,7 +28,7 @@ Project consists of repositories:
    `docker-compose up --build` 
    
    After that, the necessary images will be downloaded, and then
-   the application will be run in containers. To view information, use the commands:  
+   the application will be run in containers. In order to view information, use the commands:  
    `docker image ls`  
    `docker container ls -a`  
    `docker volume ls`  
